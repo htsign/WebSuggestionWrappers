@@ -1,7 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <UserSecretsId>f3250d6a-36f8-4f59-8c87-c79d9b00c0c3</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AngleSharp" Version="0.14.0" />
@@ -18,7 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="4.7.2" />
+    <None Include="paket.references" />
     <Compile Include="String.fs" />
     <Compile Include="Suggest.fs" />
   </ItemGroup>
+  <Import Project="..\.paket\paket.targets" />
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
