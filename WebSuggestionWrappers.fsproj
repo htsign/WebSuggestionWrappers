@@ -18,7 +18,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="4.7.2" />
-    <Compile Include="String.fs" />
+    <Compile Include="lib\Operators.fs" />
+    <Compile Include="lib\String.fs" />
+    <Compile Include="lib\List.fs" />
     <Compile Include="Suggest.fs" />
   </ItemGroup>
 </Project>
